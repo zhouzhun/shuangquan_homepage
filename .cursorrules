@@ -1,0 +1,66 @@
+# Cursor Rules – HTML-5 Homepage
+alwaysApply: true
+description: >
+  Generate and edit a single-page HTML-5 “index.html” written in English.
+  Prioritise clean semantic markup, responsive design, accessibility,
+  SEO meta-tags and lightweight CSS.
+
+## 1 File structure
+- `index.html` in the project root.
+- External stylesheet `styles.css` in `/assets/css/`.
+- Optional small hero image in `/assets/img/hero.jpg` (≤150 kB).
+
+## 2 HTML conventions
+- Declare `<!DOCTYPE html>` and `<html lang="en">`.
+- In `<head>` include:
+  - `<meta charset="utf-8">`
+  - `<meta name="viewport" content="width=device-width, initial-scale=1">`
+  - Title ≤ 60 chars, descriptive and unique.
+  - Description meta ≤ 160 chars.
+  - Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`).
+  - Fav-icon link (`/favicon.ico`).
+
+## 3 Layout sections (use semantic tags)
+1. `<header>` Logo (h1) + nav (`<nav><ul><li>…`).
+2. `<main>`
+   - **Hero section** with h2 tagline, CTA button.
+   - **Features section**: three columns of feature cards.
+   - **About section**: one-paragraph mission statement.
+3. `<footer>` copyright, small nav, social links.
+
+## 4 CSS principles
+- Mobile-first, use `@media (min-width: 768px)` for tablets and `1024px` for desktop.
+- Flexbox/Grid for layout—no Bootstrap or heavy frameworks.
+- BEM naming (`.feature__card--highlight`), snake-case for files.
+- Use a system font stack or a single Google Font and preload it.
+- Provide `:hover`, `:focus`, and `:active` states for all interactive elements.
+
+## 5 Accessibility (WCAG 2.2 AA baseline)
+- Every non-decorative `<img>` needs concise `alt`.
+- Ensure contrast ratio ≥ 4.5:1 for text.
+- Use `<button>` for clickable CTAs, not divs/spans.
+- Navigation landmarks (`role="navigation"`, `aria-label` where needed).
+- Activate skip-link before the main content.
+
+## 6 Performance
+- Inline critical CSS ≤ 10 KB in `<head>`, defer the rest.
+- Compress images (WebP preferred) and lazy-load below the fold.
+- Minify and bundle assets in production.
+- Lighthouse target scores ≥ 90 for Performance, SEO, Accessibility.
+
+## 7 SEO & analytics
+- Canonical URL tag.
+- JSON-LD `WebSite` schema.
+- `robots.txt` disallow nothing; submit sitemap under `/sitemap.xml`.
+- Provide an unobtrusive cookie-consent banner if analytics added.
+
+## 8 Version control & comments
+- Use meaningful git commit messages (imperative, ≤ 50 chars on subject).
+- Keep in-file comments concise, only where clarification is truly needed.
+
+## 9 Prohibited patterns
+- No inline styles except critical CSS defined above.
+- No jQuery or deprecated APIs (e.g., `<center>`, `<font>`).
+- Avoid hefty hero videos or autoplay media.
+
+## 10 Example prompt for Cursor AI
