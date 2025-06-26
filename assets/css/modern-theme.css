@@ -1,0 +1,316 @@
+/* Modern Theme Override for Editorial Template */
+:root {
+  /* Modern Color Palette */
+  --primary-blue: #2563eb;
+  --primary-blue-hover: #1d4ed8;
+  --primary-blue-light: #3b82f6;
+  
+  --neutral-900: #111827;
+  --neutral-800: #1f2937;
+  --neutral-700: #374151;
+  --neutral-600: #4b5563;
+  --neutral-500: #6b7280;
+  --neutral-400: #9ca3af;
+  --neutral-300: #d1d5db;
+  --neutral-200: #e5e7eb;
+  --neutral-100: #f3f4f6;
+  --neutral-50: #f9fafb;
+  
+  --white: #ffffff;
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+}
+
+/* Body and Basic Typography */
+body {
+  background: var(--white);
+  color: var(--neutral-700);
+}
+
+body, input, select, textarea {
+  color: var(--neutral-700);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--neutral-900) !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-blue);
+  border-bottom-color: transparent;
+}
+
+a:hover {
+  color: var(--primary-blue-hover) !important;
+  border-bottom-color: var(--primary-blue-hover);
+}
+
+/* Strong text */
+strong, b {
+  color: var(--neutral-900);
+}
+
+/* Header major styling */
+header.major {
+  border-bottom: solid 3px var(--primary-blue) !important;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  background-color: var(--primary-blue) !important;
+  color: var(--white) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+  background-color: var(--primary-blue-hover) !important;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+  background-color: var(--blue-700) !important;
+}
+
+/* Primary buttons */
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+  background-color: var(--primary-blue) !important;
+  color: var(--white) !important;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+  background-color: var(--primary-blue-hover) !important;
+}
+
+/* Form elements */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-blue) !important;
+  box-shadow: 0 0 0 1px var(--primary-blue) !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+  background: var(--white);
+  border-color: var(--neutral-300);
+  color: var(--neutral-700);
+}
+
+/* Tables */
+table tbody tr {
+  border-color: var(--neutral-200);
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: var(--neutral-50);
+}
+
+table th {
+  color: var(--neutral-900);
+}
+
+table td {
+  color: var(--neutral-700);
+}
+
+/* Sidebar */
+#sidebar {
+  background-color: var(--neutral-50);
+}
+
+#sidebar h2 {
+  color: var(--neutral-900) !important;
+}
+
+#sidebar .toggle {
+  color: var(--neutral-600);
+}
+
+#sidebar .toggle:hover {
+  color: var(--primary-blue);
+}
+
+/* Header */
+#header {
+  background-color: var(--white);
+  border-bottom: solid 1px var(--neutral-200);
+}
+
+#header .logo {
+  color: var(--neutral-900) !important;
+}
+
+#header .icons a {
+  color: var(--neutral-600);
+}
+
+#header .icons a:hover {
+  color: var(--primary-blue);
+}
+
+/* Menu */
+#menu ul a,
+#menu ul span {
+  color: var(--neutral-700);
+}
+
+#menu ul a:hover,
+#menu ul span:hover {
+  color: var(--primary-blue) !important;
+}
+
+/* Banner */
+#banner {
+  background-color: var(--neutral-50);
+}
+
+#banner h1 {
+  color: var(--neutral-900) !important;
+}
+
+/* Footer */
+#footer .copyright {
+  color: var(--neutral-500);
+}
+
+#footer .copyright a {
+  color: var(--neutral-600);
+}
+
+#footer .copyright a:hover {
+  color: var(--primary-blue);
+}
+
+/* Contact icons */
+ul.contact li:before {
+  color: var(--primary-blue) !important;
+}
+
+ul.contact li a {
+  color: var(--neutral-700);
+}
+
+ul.contact li a:hover {
+  color: var(--primary-blue);
+}
+
+/* Pagination */
+ul.pagination li > .page.active {
+  background-color: var(--primary-blue) !important;
+  color: var(--white) !important;
+}
+
+ul.pagination li > .page:hover {
+  background-color: var(--neutral-100);
+}
+
+/* Features icons */
+.features article .icon:before {
+  color: var(--primary-blue) !important;
+}
+
+/* Mini posts */
+.mini-posts article .image {
+  border-color: var(--neutral-200);
+}
+
+/* Code blocks */
+code {
+  background: var(--neutral-100);
+  border-color: var(--neutral-300);
+  color: var(--neutral-800);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: var(--neutral-300);
+  color: var(--neutral-600);
+}
+
+/* HR elements */
+hr {
+  border-color: var(--neutral-200);
+}
+
+hr.major {
+  border-color: var(--neutral-300);
+}
+
+/* Search form */
+#search form:before {
+  color: var(--neutral-500) !important;
+}
+
+#search form input[type="text"] {
+  background: var(--white);
+  color: var(--neutral-700);
+}
+
+/* Box elements */
+.box {
+  background: var(--white);
+  border-color: var(--neutral-200);
+}
+
+/* Video containers and embeds */
+.video-container {
+  border: 1px solid var(--neutral-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Ensure smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Make sure all text is readable */
+p, li, td, th, span, div {
+  color: inherit;
+}
+
+/* Override any remaining old colors */
+.button:not(.primary) {
+  background-color: var(--neutral-600) !important;
+  color: var(--white) !important;
+}
+
+.button:not(.primary):hover {
+  background-color: var(--neutral-700) !important;
+} 
