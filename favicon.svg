@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- Panda ears -->
-  <ellipse cx="8" cy="6" rx="4" ry="5" fill="black"/>
-  <ellipse cx="24" cy="6" rx="4" ry="5" fill="black"/>
+  <!-- Ears -->
+  <ellipse cx="8" cy="6" rx="3.5" ry="4" fill="black"/>
+  <ellipse cx="24" cy="6" rx="3.5" ry="4" fill="black"/>
   
-  <!-- Panda head -->
-  <circle cx="16" cy="12" r="8" fill="black"/>
-  <circle cx="16" cy="12" r="6" fill="white"/>
+  <!-- Head (black circle) -->
+  <circle cx="16" cy="10" r="7" fill="black"/>
   
-  <!-- Eyes (white dots on black head) -->
-  <circle cx="13" cy="10" r="1.5" fill="white"/>
-  <circle cx="19" cy="10" r="1.5" fill="white"/>
+  <!-- Eyes (white dots) -->
+  <circle cx="13" cy="9" r="1.2" fill="white"/>
+  <circle cx="19" cy="9" r="1.2" fill="white"/>
   
-  <!-- Hair/fringe on top -->
-  <path d="M 12 6 Q 16 4 20 6" stroke="black" stroke-width="1.5" fill="none"/>
+  <!-- Hair/fringe on top (curved white line) -->
+  <path d="M 11 5 Q 16 3 21 5" stroke="white" stroke-width="1.8" fill="none"/>
   
-  <!-- Smiling mouth -->
-  <path d="M 12 15 Q 16 18 20 15" stroke="white" stroke-width="2" fill="none"/>
+  <!-- Arms extending horizontally -->
+  <ellipse cx="4" cy="15" rx="2.5" ry="5" fill="black" transform="rotate(-20 4 15)"/>
+  <ellipse cx="28" cy="15" rx="2.5" ry="5" fill="black" transform="rotate(20 28 15)"/>
   
-  <!-- Body -->
-  <ellipse cx="16" cy="22" rx="6" ry="4" fill="black"/>
+  <!-- Torso/body -->
+  <rect x="14" y="17" width="4" height="6" fill="black"/>
   
-  <!-- Arms extending outward -->
-  <ellipse cx="6" cy="18" rx="3" ry="6" fill="black"/>
-  <ellipse cx="26" cy="18" rx="3" ry="6" fill="black"/>
+  <!-- Ring/platform in middle -->
+  <ellipse cx="16" cy="20" rx="6" ry="1.5" fill="none" stroke="black" stroke-width="2"/>
   
-  <!-- Platform/base -->
-  <ellipse cx="16" cy="26" rx="8" ry="1.5" fill="black"/>
-  
-  <!-- Legs -->
-  <ellipse cx="12" cy="28" rx="2" ry="4" fill="black"/>
-  <ellipse cx="20" cy="28" rx="2" ry="4" fill="black"/>
+  <!-- Legs in A-shape -->
+  <ellipse cx="11" cy="27" rx="2" ry="5" fill="black" transform="rotate(-15 11 27)"/>
+  <ellipse cx="21" cy="27" rx="2" ry="5" fill="black" transform="rotate(15 21 27)"/>
 </svg> 
