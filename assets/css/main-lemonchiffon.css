@@ -2272,3 +2272,43 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* Publications */
+#publications .publication-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.5em;
+  margin: 0;
+  padding: 0; }
+
+#publications .publication-item + .publication-item {
+  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  margin-top: 2.5em;
+  padding-top: 2.5em; }
+
+#publications .publication-copy {
+  flex: 1 1 auto;
+  min-width: 0; }
+
+#publications .publication-copy h3 {
+  margin: 0 0 0.75em 0; }
+
+#publications .publication-copy p {
+  margin: 0; }
+
+#publications .publication-action {
+  flex: 0 0 auto;
+  padding-top: 0.1em; }
+
+#publications .publication-action .button {
+  white-space: nowrap; }
+
+@media screen and (max-width: 736px) {
+  #publications .publication-item {
+    flex-direction: column;
+    gap: 1em; }
+
+  #publications .publication-action {
+    align-self: flex-end;
+    padding-top: 0; } }
