@@ -2325,13 +2325,6 @@ button,
   border-bottom-color: #3d4449;
   color: #3d4449 !important; }
 
-#awards .funding-table {
-  min-width: 760px; }
-
-#awards .funding-table th:nth-child(-n+3),
-#awards .funding-table td:nth-child(-n+3) {
-  white-space: nowrap; }
-
 @media screen and (max-width: 736px) {
   #publications .publication-item {
     flex-direction: column;
