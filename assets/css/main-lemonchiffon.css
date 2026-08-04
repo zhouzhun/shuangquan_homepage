@@ -2316,6 +2316,15 @@ button,
 #publications .publication-profiles .button {
   white-space: nowrap; }
 
+#honors a {
+  border-bottom-color: #5f5b3d;
+  color: #5f5b3d; }
+
+#honors a:hover,
+#honors a:focus {
+  border-bottom-color: #3d4449;
+  color: #3d4449 !important; }
+
 @media screen and (max-width: 736px) {
   #publications .publication-item {
     flex-direction: column;
