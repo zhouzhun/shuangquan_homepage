@@ -2304,6 +2304,18 @@ button,
 #publications .publication-action .button {
   white-space: nowrap; }
 
+#publications .publication-profiles {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1em;
+  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  margin-top: 2.5em;
+  padding-top: 2.5em; }
+
+#publications .publication-profiles .button {
+  white-space: nowrap; }
+
 @media screen and (max-width: 736px) {
   #publications .publication-item {
     flex-direction: column;
@@ -2312,3 +2324,8 @@ button,
   #publications .publication-action {
     align-self: flex-end;
     padding-top: 0; } }
+
+@media screen and (max-width: 480px) {
+  #publications .publication-profiles {
+    flex-direction: column;
+    align-items: flex-end; } }
